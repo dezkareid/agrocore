@@ -8,7 +8,8 @@
 module.exports = {
 
   attributes: {
-
+  	tipo: ['temperatura', 'humedad', 'luz'],
+  	medida: 'float'
   }
 };
 
