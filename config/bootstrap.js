@@ -10,6 +10,20 @@
  */
 
 module.exports.bootstrap = function(cb) {
+  var firebase = require("firebase");
+  var dotenv = require('dotenv');
+
+  dotenv.load();
+  firebase.initializeApp({
+    serviceAccount: process.env.FIREBASE_CREDENTIALS,
+    databaseURL: process.env.FIREBASE_URL
+  });
+
+  var db = firebase.database();
+  var ref = db.ref("value");
+  ref.once("value", function(snapshot) {
+    sails.log.debug(snapshot.val());
+  });
 
   // It's very important to trigger this callback method when you are finished
   // with the bootstrap!  (otherwise your server will never lift, since it's waiting on the bootstrap)
