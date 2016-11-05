@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+  	nombre: 'string',
+  	area: 'float',
+  	suelo: 'string',
+  	usuario: {
+  		model: 'usuarios'
+  	}
   }
 };
 

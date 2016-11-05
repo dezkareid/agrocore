@@ -8,7 +8,16 @@
 module.exports = {
 
   attributes: {
-
+  	nombre: 'string',
+  	avatar: 'string',
+  	nacimiento: 'date',
+  	token: 'string',
+  	asociacion: {
+  		model: 'asociaciones'
+  	},
+  	rol: {
+  		model: 'roles'
+  	}
   }
 };
 

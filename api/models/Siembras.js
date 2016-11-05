@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+  	cultivo: 'string',
+  	hectareas: 'float',
+  	produccion: 'float',
+  	terreno: {
+  		model: 'terrenos'
+  	}
   }
 };
 

@@ -8,8 +8,7 @@
 module.exports = {
 
   attributes: {
-
-    usuarios : { type: 'string' }
+    nombre : 'string'
   }
 };
 
