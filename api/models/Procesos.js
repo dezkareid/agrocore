@@ -8,7 +8,13 @@
 module.exports = {
 
   attributes: {
-
+  	descripcion: 'text',
+  	cultivo: {
+  		model: 'cultivos'
+  	},
+  	producto: {
+  		model: 'productos'
+  	},
   }
 };
 

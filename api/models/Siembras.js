@@ -8,9 +8,14 @@
 module.exports = {
 
   attributes: {
-  	cultivo: 'string',
+  	cultivo: {
+      model: 'cultivos'
+    },
   	hectareas: 'float',
   	produccion: 'float',
+  	inicio: 'date',
+  	estado: ['siembra', 'cultivo', 'venta', 'finalizado'],
+  	fin: 'date',
   	terreno: {
   		model: 'terrenos'
   	}

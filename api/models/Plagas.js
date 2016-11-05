@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+  	nombre: 'string',
+  	cultivos: {
+      collection: 'cultivos',
+      via: 'plagas'
+    
+  	},
   }
 };
 

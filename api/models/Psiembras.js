@@ -8,8 +8,13 @@
 module.exports = {
 
   attributes: {
-  	descripcion: 'string',
-  	producto: 'string'
+  	descripcion: 'text',
+  	producto: {
+  		model: 'productos'
+  	},
+  	siembra: {
+  		model: 'siembras'
+  	}
   }
 };
 

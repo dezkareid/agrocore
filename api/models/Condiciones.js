@@ -8,6 +8,11 @@
 module.exports = {
 
   attributes: {
+  	plaga: {
+  		model: 'plagas'
+  	},
+  	temperatura: 'integer',
+  	humedad: 'integer'
 
   }
 };

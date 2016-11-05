@@ -8,7 +8,18 @@
 module.exports = {
 
   attributes: {
-
+  	encontrada: 'date',
+  	erradicacion: 'date',
+  	detalles: 'text',
+  	plaga: {
+  		model: 'plagas'
+  	},
+  	proceso: {
+  		model: 'psiembras'
+  	},
+  	producto: {
+  		model: 'productos'
+  	}
   }
 };
 

@@ -8,7 +8,15 @@
 module.exports = {
 
   attributes: {
-
+  	descripcion: 'text',
+  	enfermedades: {
+  		collection: 'enfermedades',
+  		via: 'tratamientos'
+  	},
+  	productos: {
+  		collection: 'productos',
+  		via: 'tratamientos'
+  	}
   }
 };
 

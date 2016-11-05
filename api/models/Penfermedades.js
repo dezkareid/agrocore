@@ -8,7 +8,21 @@
 module.exports = {
 
   attributes: {
-
+  	encontrada: 'date',
+  	erradicacion: 'date',
+  	detalles: 'text',
+  	enfermedad: {
+  		model: 'enfermedades'
+  	},
+  	tratamiento: {
+  		model: 'tratamientos'
+  	},
+  	proceso: {
+  		model: 'psiembras'
+  	},
+  	producto: {
+  		model: 'productos'
+  	}
   }
 };
 

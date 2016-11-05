@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+  	epoca: ['primavera', 'otoño', 'verano', 'invierno'],
+  	inicio: 'date',
+  	fin: 'date',
+  	cultivo: {
+  		model: 'cultivos'
+  	}
   }
 };
 

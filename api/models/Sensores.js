@@ -9,7 +9,10 @@ module.exports = {
 
   attributes: {
   	nombre: 'string',
-  	token: 'string'
+  	token: 'string',
+  	siembra: {
+  		model: 'siembras'
+  	}
   }
 };
 
