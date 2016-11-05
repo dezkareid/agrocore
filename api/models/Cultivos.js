@@ -8,7 +8,25 @@
 module.exports = {
 
   attributes: {
-
+  	nombre: 'string',
+  	suelo: {
+  		model: 'suelos'
+  	},
+  	plagas: {
+      collection: 'plagas',
+      via: 'cultivos'
+    
+  	},
+  	enfermedades: {
+      collection: 'enfermedades',
+      via: 'cultivos'
+    
+  	},
+  	nutrientes: {
+      collection: 'nutrientes',
+      via: 'cultivos'
+    
+  	}
   }
 };
 

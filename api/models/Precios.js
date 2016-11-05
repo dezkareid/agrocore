@@ -8,7 +8,13 @@
 module.exports = {
 
   attributes: {
-
+  	cultivo: {
+  		model: 'cultivos'
+  	},
+  	costo: 'float',
+  	zona: {
+  		model: 'zonas'
+  	}
   }
 };
 

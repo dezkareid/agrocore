@@ -8,7 +8,13 @@
 module.exports = {
 
   attributes: {
-
+  	cultivo: {
+  		model: 'cultivos'
+  	},
+  	cantidad: 'integer',
+  	nutriente: {
+  		model: 'nutrientes'
+  	}
   }
 };
 

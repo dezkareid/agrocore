@@ -9,7 +9,10 @@ module.exports = {
 
   attributes: {
   	tipo: ['temperatura', 'humedad', 'luz'],
-  	medida: 'float'
+  	medida: 'float',
+  	sensor: {
+  		model: 'sensores'
+  	}
   }
 };
 

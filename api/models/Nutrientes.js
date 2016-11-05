@@ -8,7 +8,14 @@
 module.exports = {
 
   attributes: {
-
+  	cultivos: {
+      collection: 'cultivos',
+      via: 'nutrientes'
+  	},
+  	productos: {
+  		collection: 'productos',
+  		via: 'nutrientes'
+  	}
   }
 };
 

@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+  	temperatura: 'float',
+  	humedad: 'float',
+  	viento: 'float',
+  	zona: {
+  		model: 'zonas'
+  	}
   }
 };
 

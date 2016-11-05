@@ -8,7 +8,16 @@
 module.exports = {
 
   attributes: {
-
+  	nombre: 'string',
+  	tipo: ['fertilizante, pesticida'],
+  	nutrientes: {
+  		collection: 'nutrientes',
+  		via: 'productos'
+  	},
+  	tratamientos: {
+  		collection: 'tratamientos',
+  		via: 'productos'
+  	}
   }
 };
 

@@ -8,7 +8,11 @@
 module.exports = {
 
   attributes: {
-
+  	descripcion: 'text',
+  	enfermedades: {
+      collection: 'enfermedades',
+      via: 'sintomas'
+    }, 
   }
 };
 
