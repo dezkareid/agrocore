@@ -22,18 +22,16 @@ module.exports = {
       collection: 'cultivos',
       via: 'plagas'
   	},
-    // productos: {
-    //   collection: 'productos',
-    //   via: 'plagas'
-    // },
+    productos: {
+      collection: 'productos',
+      via: 'plagas'
+    },
 
     seedData: [],
     fillData: function() {
       for (i = 0; i < plagas.length; i++) {
         this.seedData.push({
           nombre: plagas[i]
-          // cultivos: null,
-          // productos: null
         });
       }
     }
