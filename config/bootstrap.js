@@ -26,7 +26,12 @@ module.exports.bootstrap = function(cb) {
   });
 
   async.series([
-    Asociaciones.seed
+    Asociaciones.seed,
+    Suelos.seed,
+    Plagas.seed
+    // Productos.seed,
+    // Cultivos.seed,
+    // Procesos.seed
   ]);
 
   // It's very important to trigger this callback method when you are finished

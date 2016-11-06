@@ -19,6 +19,13 @@ module.exports = {
   	terreno: {
   		model: 'terrenos'
   	}
+  },
+  seedData: [],
+  fillData: function() {
+    for (i = 0; i < plagas.length; i++) {
+        this.seedData.push({
+          nombre: plagas[i]
+        });
+    }
   }
 };
-

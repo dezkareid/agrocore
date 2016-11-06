@@ -38,7 +38,6 @@ module.exports.models = {
       callback();
       return;
     }
-    sails.log.warn(self.seedData);
     self.count().exec(function (err, count) {
       if (!err && count === 0) {
         sails.log.debug('Seeding ' + modelName + '...');
