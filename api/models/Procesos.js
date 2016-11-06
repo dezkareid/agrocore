@@ -26,15 +26,15 @@ module.exports = {
   },
   seedData: [],
   fillData: function() {
-    for (var i = 0; i < 10; i++) {
+    // for (var i = 0; i <= 10; i++) {
       for (i = 0; i < proceso.length; i++) {
           this.seedData.push({
             descripcion: proceso[i],
             // producto: faker.random.number({min:1, max:2}),
-            cultivo: i
+            cultivo: 1
           });
       }
-    }
+    // }
 
   }
 };

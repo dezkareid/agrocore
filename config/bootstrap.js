@@ -28,10 +28,10 @@ module.exports.bootstrap = function(cb) {
   async.series([
     Asociaciones.seed,
     Suelos.seed,
+    Productos.seed,
+    Procesos.seed,
+    Cultivos.seed,
     Plagas.seed
-    // Productos.seed,
-    // Cultivos.seed,
-    // Procesos.seed
   ]);
 
   // It's very important to trigger this callback method when you are finished

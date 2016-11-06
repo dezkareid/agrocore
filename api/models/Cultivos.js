@@ -26,6 +26,7 @@ module.exports = {
   	plagas: {
       collection: 'plagas',
       via: 'cultivos'
+
   	},
   	enfermedades: {
       collection: 'enfermedades',
