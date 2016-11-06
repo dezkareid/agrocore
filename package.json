@@ -5,6 +5,7 @@
   "description": "a Sails application",
   "keywords": [],
   "dependencies": {
+    "apiai": "^3.0.2",
     "dotenv": "2.0.0",
     "ejs": "2.3.4",
     "faker": "3.1.0",
@@ -22,6 +23,7 @@
     "grunt-sails-linker": "~0.10.1",
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
+    "promise": "^7.1.1",
     "rc": "1.0.1",
     "sails": "~0.12.6",
     "sails-disk": "~0.10.9"
